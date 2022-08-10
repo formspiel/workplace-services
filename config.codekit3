@@ -43,9 +43,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/build\/notes.txt",
-      "oF" : 0
+      "oF" : 1
     },
     "\/source\/_site-footer.kit" : {
       "cB" : 0,

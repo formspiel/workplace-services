@@ -1,3 +1,5 @@
+https://codekitapp.com/help/kit/
+
 <!-- $page_current = true -->
 <!-- @import _site-nav.kit -->
 
