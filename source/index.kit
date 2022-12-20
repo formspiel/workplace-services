@@ -1,6 +1,6 @@
 <!-- @import _site-head.kit -->
 <body>
-<h1>Hi Andreas!<br />
+<h1>Hi Andreas!<br>
 Service-Portal for Desk <span>A 01 D 450</span></h1>
 
 <div class="section">
@@ -15,24 +15,24 @@ Service-Portal for Desk <span>A 01 D 450</span></h1>
 		<li>
 			<span class="list--desk-name">A 01 D 430</span>
 			<span class="list--desk-action">
-				<button type="">Book now!</button>
+				<button type="button">Book now!</button>
 			</span>
 		</li>
 		<li>
 			<span class="list--desk-name">A 01 D 440</span>
 			<span class="list--desk-action">
-				<button type="">Book now!</button>
+				<button type="button">Book now!</button>
 			</span>
 		</li>
 		<li>
 			<span class="list--desk-name">A 01 D 435</span>
 			<span class="list--desk-action">
-				<button type="">Book now!</button>
+				<button type="button">Book now!</button>
 			</span>
 		</li>
 	</ul>
 	
-	<a href="">I want more choices.</a>
+	<a href="#">I want more choices.</a>
 </div>
 
 <div class="section">
@@ -47,21 +47,23 @@ Service-Portal for Desk <span>A 01 D 450</span></h1>
 	<details>
 		<summary>Open an individual ticket</summary>
 		<form>
-			<legend>New ticket</legend>
-			
-			<label for="ticket-name">Your name</label><br/>
-			<input type="text" id="ticket-name" name="ticket-name" value="Andreas" readonly /><br/>
-			
-			<label for="ticket-title">Ticket title</label><br/>
-			<input type="text" id="ticket-title" name="ticket-title" value="" /><br/>
-			
-			<label for="ticket-attachment">Take a picture</label><br/>
-			<input type="file" id="ticket-attachment" accept="image/*" /><br/>
-			
-			<label for="ticket-description">Description</label><br/>
-			<textarea rows="" cols="" id="ticket-description"></textarea><br/>
-			
-			<button type="">Open ticket</button>
+			<fieldset>
+				<legend>New ticket</legend>
+				
+				<label for="ticket-name">Your name</label><br>
+				<input type="text" id="ticket-name" name="ticket-name" value="Andreas" readonly><br>
+				
+				<label for="ticket-title">Ticket title</label><br>
+				<input type="text" id="ticket-title" name="ticket-title" value=""><br>
+				
+				<label for="ticket-attachment">Take a picture</label><br>
+				<input type="file" id="ticket-attachment" accept="image/*"><br>
+				
+				<label for="ticket-description">Description</label><br>
+				<textarea id="ticket-description"></textarea><br>
+				
+				<button type="button">Open ticket</button>
+			</fieldset>
 		</form>
 	</details>
 </div>

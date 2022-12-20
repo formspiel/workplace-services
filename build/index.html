@@ -1,20 +1,20 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<title>Workplace Services</title>
-	<meta name="description" content="Concept prototype to make workplace services ease-of use for everyone" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+	<meta name="description" content="Concept prototype to make workplace services ease-of use for everyone">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<!--
 		<meta name="theme-color" content="#fafafa" />
 	<meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
 	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
 	-->
-	<link rel="stylesheet" href="styles-min.css" />
+	<link rel="stylesheet" href="styles-min.css">
 </head>
 
 <body>
-<h1>Hi Andreas!<br />
+<h1>Hi Andreas!<br>
 Service-Portal for Desk <span>A 01 D 450</span></h1>
 
 <div class="section">
@@ -29,24 +29,24 @@ Service-Portal for Desk <span>A 01 D 450</span></h1>
 		<li>
 			<span class="list--desk-name">A 01 D 430</span>
 			<span class="list--desk-action">
-				<button type="">Book now!</button>
+				<button type="button">Book now!</button>
 			</span>
 		</li>
 		<li>
 			<span class="list--desk-name">A 01 D 440</span>
 			<span class="list--desk-action">
-				<button type="">Book now!</button>
+				<button type="button">Book now!</button>
 			</span>
 		</li>
 		<li>
 			<span class="list--desk-name">A 01 D 435</span>
 			<span class="list--desk-action">
-				<button type="">Book now!</button>
+				<button type="button">Book now!</button>
 			</span>
 		</li>
 	</ul>
 	
-	<a href="">I want more choices.</a>
+	<a href="#">I want more choices.</a>
 </div>
 
 <div class="section">
@@ -61,21 +61,23 @@ Service-Portal for Desk <span>A 01 D 450</span></h1>
 	<details>
 		<summary>Open an individual ticket</summary>
 		<form>
-			<legend>New ticket</legend>
-			
-			<label for="ticket-name">Your name</label><br/>
-			<input type="text" id="ticket-name" name="ticket-name" value="Andreas" readonly /><br/>
-			
-			<label for="ticket-title">Ticket title</label><br/>
-			<input type="text" id="ticket-title" name="ticket-title" value="" /><br/>
-			
-			<label for="ticket-attachment">Take a picture</label><br/>
-			<input type="file" id="ticket-attachment" accept="image/*" /><br/>
-			
-			<label for="ticket-description">Description</label><br/>
-			<textarea rows="" cols="" id="ticket-description"></textarea><br/>
-			
-			<button type="">Open ticket</button>
+			<fieldset>
+				<legend>New ticket</legend>
+				
+				<label for="ticket-name">Your name</label><br>
+				<input type="text" id="ticket-name" name="ticket-name" value="Andreas" readonly><br>
+				
+				<label for="ticket-title">Ticket title</label><br>
+				<input type="text" id="ticket-title" name="ticket-title" value=""><br>
+				
+				<label for="ticket-attachment">Take a picture</label><br>
+				<input type="file" id="ticket-attachment" accept="image/*"><br>
+				
+				<label for="ticket-description">Description</label><br>
+				<textarea id="ticket-description"></textarea><br>
+				
+				<button type="button">Open ticket</button>
+			</fieldset>
 		</form>
 	</details>
 </div>
