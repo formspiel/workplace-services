@@ -42,7 +42,7 @@
     "\/notes.txt" : {
       "cB" : 0,
       "ft" : 8192,
-      "hM" : 0,
+      "hM" : 3,
       "oA" : 0,
       "oAP" : "\/build\/notes.txt",
       "oF" : 0
