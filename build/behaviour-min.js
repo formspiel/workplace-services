@@ -1,0 +1,1 @@
+!function(){document.getElementById("js-btn-book-desk").addEventListener("click",(function(){e.showModal()}));document.getElementById("cancel").addEventListener("click",(function(){e.close()}));const e=document.getElementById("favDialog")}();
