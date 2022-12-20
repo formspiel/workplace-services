@@ -1,43 +1,63 @@
 <!-- @import _site-head.kit -->
 <body>
 <h1>Hi Andreas!<br>
-Service-Portal for Desk <span>A 01 D 450</span></h1>
+Service-Portal for Desk <span>A 01 450 D10</span></h1>
 
 <div class="section">
 	<h2>Book this desk</h2>
 	<div class="msg--info">
 		<span class="msg--info-icon" aria-hidden="true">ℹ️</span>
-		<span class="msg--info-text">This desk is booked from 11 till 18 o’clock</span>
+		<span class="msg--info-text"><b>Oh no!</b> This desk is already booked from 11 till 18 o’clock</span>
 	</div>
 	
 	<h3>Next available desks in this area:</h3>
-	<ul class="list--desk">
+	<!--<ul class="list--desk">
 		<li>
-			<span class="list--desk-name">A 01 D 430</span>
+			<span class="list--desk-name">A 01 450 D09</span>
 			<span class="list--desk-action">
-				<button type="button">Book now!</button>
+				<button id="js-btn-book-desk">Book now!</button>
 			</span>
 		</li>
 		<li>
-			<span class="list--desk-name">A 01 D 440</span>
+			<span class="list--desk-name">A 01 450 D14</span>
 			<span class="list--desk-action">
-				<button type="button">Book now!</button>
+				<button id="js-btn-book-desk">Book now!</button>
 			</span>
 		</li>
 		<li>
-			<span class="list--desk-name">A 01 D 435</span>
+			<span class="list--desk-name">A 01 450 D21</span>
 			<span class="list--desk-action">
-				<button type="button">Book now!</button>
+				<button id="js-btn-book-desk">Book now!</button>
 			</span>
 		</li>
-	</ul>
+	</ul> -->
 	
-	<a href="#">I want more choices.</a>
+
+	<fieldset>
+		<legend>Next available desks in this area</legend>
+		<label>
+			<input type="radio" name="desk-available" checked>
+			<span>A 01 450 D09</span>
+		</label>
+		<br>
+		<label>
+			<input type="radio" name="desk-available">
+			<span>A 01 450 D14</span>
+		</label>
+		<br>
+		<label>
+			<input type="radio" name="desk-available">
+			<span>A 01 450 D21</span>
+		</label>
+		<br><br>
+		<button id="js-btn-book-desk">Book now!</button>
+		<a href="#">I want more choices.</a>
+	</fieldset>
+
 </div>
 
 <div class="section">
-	<h2>Open a ticket</h2>
-	<h3>Common issues:</h3>
+	<h2>Do you have issues with the desk?</h2>
 	<ul>
 		<li><a href="">Monitor doesn’t work with AMC</a></li>
 		<li><a href="">Not enough power for the AMC</a></li>
@@ -45,13 +65,16 @@ Service-Portal for Desk <span>A 01 D 450</span></h1>
 		<li><a href="">Weird colours on screen with AVC</a></li>
 	</ul>
 	<details>
-		<summary>Open an individual ticket</summary>
+		<summary>Open an ticket</summary>
 		<form>
 			<fieldset>
 				<legend>New ticket</legend>
 				
 				<label for="ticket-name">Your name</label><br>
 				<input type="text" id="ticket-name" name="ticket-name" value="Andreas" readonly><br>
+				
+				<label for="desk-name">Desk</label><br>
+				<input type="text" id="desk-name" name="desk-name" value="A 01 450 D10" readonly><br>
 				
 				<label for="ticket-title">Ticket title</label><br>
 				<input type="text" id="ticket-title" name="ticket-title" value=""><br>
@@ -71,6 +94,37 @@ Service-Portal for Desk <span>A 01 D 450</span></h1>
 <!-- <div class="section">
 	<h2>Book your time</h2>
 </div> -->
+
+<dialog id="favDialog" aria-labelledby="favDialog__label">
+	
+	<div role="document">
+		<button id="cancel" class="btn-dialog-close">×</button>
+		
+		<!-- This is the title of the dialog.  Since it is set as the dialog's `aria-labelledby`,
+		it will be read when it is opened -->
+		<h2 id="favDialog__label">Book now desk A 01 450 D09 </h2>
+		
+		<fieldset>
+			<legend>Confirm and add another day</legend>
+			<label>
+				<input type="checkbox" name="desk-confirm-01" checked>
+				<span>Today, Dec 21<sup>st</sup></span>
+			</label>
+			<hr>
+			<label>
+				<input type="checkbox" name="desk-confirm-01">
+				<span>Tomorrow, Dec 22<sup>nd</sup></span>
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name="desk-confirm-01">
+				<span>Friday, Dec 23<sup>rd</sup></span>
+			</label>
+			<br><br>
+			<button>Book now!</button>
+		</fieldset>
+	</div>
+</dialog>
 <!-- @import _site-footer.kit -->
 </body>
 </html>
